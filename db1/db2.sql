@@ -1,5 +1,8 @@
 -- database: :memory:
 -- :memory: is a special database name that creates a temporary database in memory
+
+PRAGMA foreign_keys = ON;
+
 CREATE TABLE user (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   username VARCHAR(255) NOT NULL,
